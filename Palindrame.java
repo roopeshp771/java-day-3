@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Palindrame
+{
+    public static void main(String[] args)
+    {
+        Scanner og=new Scanner(System.in);
+        System.out.println("Enter the string:");
+        String str=og.nextLine();
+        String rev="";
+        for(int i=str.length()-1;i>=0;i--)
+        {
+            rev +=str.charAt(i);
+        }
+        if(str.equals(rev))
+        {
+            System.out.println("is Palindrame");
+        }
+        else{
+            System.out.println("is not Palindrame");
+        }
+
+    }
+}
